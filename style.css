@@ -45,3 +45,15 @@ main, article{
     margin:auto;
     padding: 5vw;
 }
+
+footer{
+    background: black;
+    padding: 2 ,5vw;
+    color:white;
+
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+}

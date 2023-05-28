@@ -1,5 +1,29 @@
 body { 
     background-color: rgba(33, 125, 164, 0.723);
+    margin: 0;
+}
+nav{
+    border: 2px dashed red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 20px;
+}
+.navul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navul li{
+    margin-left:  20px;
+}
 
+.bodyHeader{
+    border:2px dashed blue;
+    text-align: center;
 
+}
+img{
+    max-width: 100%;
 }

@@ -1,59 +1,98 @@
-body { 
-    background-color: rgba(33, 125, 164, 0.723);
-    margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+html {
+    scroll-behavior: smooth;
 }
-nav{
-    border: 2px dashed red;
+
+body {
+    background: rgba(193, 245, 98, 0.6);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:15px 20px;
+    padding: 15px 20px;
+    position: fixed;
+    width: calc(100% - 40px);
+    top: 0;
+    background: rgb(227, 181, 117);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-.navul{
-    list-style-type: none;
+
+.navUl {
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-}
-.navul li{
-    margin-left:  20px;
+    justify-content: space-around;
 }
 
-.bodyHeader{
-    border:2px dashed blue;
+.navUl li {
+    margin-left: 20px;
+}
+
+.bodyHeader {
     text-align: center;
 }
-img{
+
+img {
     max-width: 100%;
 }
-h1{
+
+h1 {
     margin-bottom: 0;
-}
-p{
-    margin-top: 0;
-}
-.bodyHeader p {
-    padding: 0% 10%;
+    margin-top: 60px;
 }
 
-h2{
-    margin-bottom: 0;
+p {
+    margin-top: 0px;
 }
-main, article{
+
+.bodyHeader p {
+    padding: 0 10%;
+}
+
+main, article {
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
     padding: 5vw;
 }
 
-footer{
+footer {
     background: black;
-    padding: 2 ,5vw;
-    color:white;
-
+    padding: 2.5vw;
+    color: white;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: inherit;
+}
+
+#start, #projekty, #contact {
+    margin-top: calac (2rem + 30px);
+}
+
+label, #toggler {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+@media (max-width: 768px) {
+    .navUl{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: calc(30px + 1.5rem);
+        padding: 2em 2rem 1rem 1rem;
+        background: rgb(248, 243, 236);
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    label {
+        display: flex;
+    }
+    #toggler:checked ~ .navUl{
+        display: BLOCK;
+    }
 }
